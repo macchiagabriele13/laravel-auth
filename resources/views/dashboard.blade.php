@@ -16,6 +16,12 @@
 
                     {{ __('You are logged in!') }}
                 </div>
+
+
+                <a href="{{route('admin.projects.index')}}" class="btn btn-secondary">
+                    <button type="button" class="btn btn-primary"></button>
+                </a>
+
             </div>
         </div>
     </div>
