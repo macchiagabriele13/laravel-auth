@@ -21,6 +21,7 @@ class ProjectSeeder extends Seeder
             $project = new Project();
             $project->title = $faker->sentence(3);
             $project->slug = Str::slug($project->title, '-');
+            $project->cover_image = 'placeholders/' . $faker->image('storage/app/public/placeholders', 600, 300, 'Project', false, true);
             $project->difficulty = $faker->randomElement(['Easy', 'Medium', 'Difficult']);
             $project->languages = $faker->randomElement(['HTML', 'CSS', 'JS', 'PHP']);
             $project->save();
