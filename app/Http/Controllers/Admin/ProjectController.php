@@ -46,7 +46,7 @@ class ProjectController extends Controller
         $val_data['slug'] = $project_slug;
         $project = Project::create($val_data);
 
-        Project::create($val_data);
+
 
         return to_route('admin.projects.index')->with('message', "$project->title added succesfully");
     }
