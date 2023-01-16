@@ -6,10 +6,16 @@
         <div class="details">
             <h1>{{$project->title}}</h1>
             <p>{{$project->slug}}</p>
+
+
+            <img src="{{asset('storage/'. $project->cover_image)}}" alt="">
+
             <div class="meta">
                 <div class="difficulty">
-                    price: {{$project->difficulty}}
+                    difficulty: {{$project->difficulty}}
                 </div>
+
+
                 <div>
                     language:{{$project->languages}}
                 </div>
